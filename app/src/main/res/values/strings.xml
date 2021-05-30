@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">ATS</string>
+    <string name="btn_listo">Listo</string>
+    <string name="btn_atras">Atras</string>
+    <string name="tiempo_examen_simulacion">El examen va a durar 3 horas</string>
+    <string name="pregunta_iniciar_simulacion">¿Listo para iniciar el Examen?</string>
+    <string name="btn_siguiente">Siguiente</string>
+    <string name="simulacro_tiempo">Tiempo:</string>
+    <string name="hora">00:00:25</string>
+    <string name="Pregunta_simulacion">¿En que fecha fue proclamada  la declaracion universal de los  derechos humanos?</string>
+    <string name="materia_simulacro">Curso: Historia Universal</string>
+    <string name="btn_salir">Salir</string>
+    <string name="btn_volver_intentar">Volver a Intentar</string>
+    <string name="btn_ver_errores">Ver errores</string>
+    <string name="leyenda_puntaje_simulacion">PUNTAJE: 0-100</string>
+    <string name="mostrar_puntaje_simulacion">SU PUNTAJE: 86 PUNTOS</string>
+    <string name="cantidad_errores_simulacion">CANTIDAD DE ERRORES: 12 ERRORES</string>
 </resources>
