@@ -15,4 +15,9 @@
     <string name="leyenda_puntaje_simulacion">PUNTAJE: 0-100</string>
     <string name="mostrar_puntaje_simulacion">SU PUNTAJE: 86 PUNTOS</string>
     <string name="cantidad_errores_simulacion">CANTIDAD DE ERRORES: 12 ERRORES</string>
+    <string name="materia_practica1">Curso:Biología</string>
+    <string name="Pregunta_practica1">Señale la organela que presenta numerosas enzimas oxidasas y catalasas:</string>
+    <string name="materia_practica2">Curso:Matemática</string>
+    <string name="horaM">00:03:30</string>
+    <string name="Pregunta_practica2">En una urna hay 10 bolas rojas, 12 azules, 15 verdes, ¿como mínimo cuál es el número de bolas que debo sacar para obtener 8 del mismo color?</string>
 </resources>
