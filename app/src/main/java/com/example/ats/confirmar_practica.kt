@@ -6,6 +6,9 @@ import android.os.Bundle
 class confirmar_practica : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_confirmarpractica)
+
+
+        //val practica1 = Confirmar
+        //setContentView(R.layout.activity_confirmarpractica)
     }
 }

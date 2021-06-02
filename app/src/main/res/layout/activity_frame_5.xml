@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F4FEBA"
-    tools:context=".PreguntaSimulacro">
+    tools:context=".frame_5">
 
 
     <LinearLayout
