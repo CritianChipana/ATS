@@ -64,7 +64,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/cpatras_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/btn_listo"
@@ -80,7 +80,7 @@
         app:layout_constraintVertical_bias="0.383" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/cplisto_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/btn_atras"
@@ -93,7 +93,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/cpatras_btn"
         app:layout_constraintVertical_bias="0.348" />
 
     <TextView
