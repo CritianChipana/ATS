@@ -20,4 +20,20 @@
     <string name="materia_practica2">Curso:Matemática</string>
     <string name="horaM">00:03:30</string>
     <string name="Pregunta_practica2">En una urna hay 10 bolas rojas, 12 azules, 15 verdes, ¿como mínimo cuál es el número de bolas que debo sacar para obtener 8 del mismo color?</string>
+    <string name="mostrar_puntaje_practica">SU PUNTAJE: 18 PUNTOS</string>
+    <string name="leyenda_puntaje_practica">PUNTAJE: 0 - 20 puntos</string>
+    <string name="titulo_practica">Practica</string>
+    <string name="cantidad_errores_practica">CANTIDAD DE ERRORES: 12 ERROR(ES)</string>
+    <string name="mensaje_inicio_practico">¿Listo para Iniciar la Practica?</string>
+    <string name="btn_registrate">REGÍSTRATE</string>
+    <string name="Nombres">Nombres:</string>
+    <string name="Apellidos">Apellidos:</string>
+    <string name="Email">Correo:</string>
+    <string name="Contrasena">Contraseña:</string>
+    <string name="Conf_contraseña">Confirmar contraseña:</string>
+    <string name="Maria">Maria Angelica</string>
+    <string name="Perez">Perez de la Cruz</string>
+    <string name="gmail">mariadelacruz@gmail.com</string>
+    <string name="Cont">Angelica#10</string>
+    <string name="titulo_registro">CREAR CUENTA</string>
 </resources>
