@@ -9,13 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-        <activity android:name=".MainActivity"></activity>
         <activity android:name=".LoginActivity" />
         <activity android:name=".frame_11" />
         <activity android:name=".frame_5" />
         <activity android:name=".crear_cuenta" />
         <activity android:name=".frame_10" />
         <activity android:name=".ResultadosSimulacion" />
+        <activity android:name=".confirmar_practica" />
         <activity android:name=".PreguntaSimulacro" />
         <activity android:name=".confirmarsimulacion">
             <intent-filter>
@@ -24,7 +24,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".confirmar_practica" />
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
