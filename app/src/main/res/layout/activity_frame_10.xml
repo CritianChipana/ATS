@@ -173,7 +173,6 @@
             android:layout_marginHorizontal="20dp"
             android:layout_height="wrap_content"
             android:backgroundTint="#004242"
-            android:paddingHorizontal="60dp"
             android:paddingVertical="15dp"
             android:text="@string/btn_ver_errores"
             android:textColor="@color/white"
