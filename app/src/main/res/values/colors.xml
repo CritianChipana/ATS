@@ -8,4 +8,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="cabezal">#1E88E5</color>
+    <color name="crema">#F4FEBA</color>
+    <color name="verde_oscuro">#004242</color>
 </resources>
