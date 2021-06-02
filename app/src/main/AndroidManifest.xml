@@ -17,15 +17,14 @@
         <activity android:name=".ResultadosSimulacion" />
         <activity android:name=".confirmar_practica" />
         <activity android:name=".PreguntaSimulacro" />
-        <activity android:name=".confirmarsimulacion">
+        <activity android:name=".confirmarsimulacion" />
+        <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <activity android:name=".LoginActivity" />
     </application>
 
 </manifest>
