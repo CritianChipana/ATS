@@ -9,6 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".LoginActivity" />
         <activity android:name=".frame_11" />
         <activity android:name=".frame_5" />
         <activity android:name=".crear_cuenta" />
