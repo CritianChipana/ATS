@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "320922475792",
+    "project_id": "ats-app-a7aeb",
+    "storage_bucket": "ats-app-a7aeb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:320922475792:android:41708de41c5e7077ca9995",
+        "android_client_info": {
+          "package_name": "com.example.ats"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "320922475792-iugl2g2l0qftjcgpu86ul4ec14knvp92.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ats",
+            "certificate_hash": "42ef1514cb325a7ab16aaf308cceb06803a2a538"
+          }
+        },
+        {
+          "client_id": "320922475792-7vji32o0oj8m6shgn5cljdtmp3cd4qf6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnbG4CfX9m34Yybeh_d4iXGZr0TtwfCDs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "320922475792-7vji32o0oj8m6shgn5cljdtmp3cd4qf6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
