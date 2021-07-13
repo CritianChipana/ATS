@@ -8,21 +8,22 @@
 
     <TextView
         android:id="@+id/textView6"
+        android:onClick="forgotpassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="¿Olvido su contraseña?"
+        android:textColor="@color/verde_oscuro"
         android:textSize="18dp"
         android:textStyle="bold"
-        android:textColor="@color/verde_oscuro"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.756"
+        app:layout_constraintHorizontal_bias="0.535"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
-        app:layout_constraintVertical_bias="0.177" />
+        app:layout_constraintTop_toBottomOf="@+id/button4"
+        app:layout_constraintVertical_bias="0.476" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/txtUser"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
@@ -39,29 +40,31 @@
         android:id="@+id/imageView"
         android:layout_width="170dp"
         android:layout_height="114dp"
-        android:layout_marginTop="73dp"
+        android:layout_marginTop="52dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/txtLogPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="51dp"
         android:ems="10"
         android:hint="@string/pass"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         android:text=""
         android:textSize="28dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/txtUser" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnIniciarSession"
+        android:onClick="login"
         android:layout_width="281dp"
         android:layout_height="67dp"
         android:layout_marginTop="23dp"
@@ -73,20 +76,54 @@
         android:background="@drawable/border_radious"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintTop_toBottomOf="@+id/txtLogPassword" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnIrRegister"
+        android:onClick="register"
         android:layout_width="281dp"
         android:layout_height="67dp"
         android:layout_marginTop="19dp"
+        android:background="@drawable/border_radious"
+        android:backgroundTint="@color/crema"
         android:text="CREAR CUENTA"
+        android:textColor="@color/verde_oscuro"
         android:textSize="24dp"
         android:textStyle="bold"
-        android:textColor="@color/verde_oscuro"
-        android:backgroundTint="@color/crema"
-        android:background="@drawable/border_radious"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/btnIniciarSession" />
+
+    <Button
+        android:id="@+id/button4"
+        android:onClick="LoginWitGoogle"
+        android:layout_width="281dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border_radious"
+        android:backgroundTint="@color/crema"
+
+        android:paddingLeft="10dp"
+        android:text="Iniciar session"
+        android:textColor="@color/verde_oscuro"
+        android:drawableStart="@drawable/icono_google_32px"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIrRegister" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_login"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.438"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.251" />
 </androidx.constraintlayout.widget.ConstraintLayout>

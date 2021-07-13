@@ -126,7 +126,7 @@
             />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/btnRegistrar"
             android:layout_width="match_parent"
             android:layout_marginHorizontal="20dp"
             android:layout_height="wrap_content"
