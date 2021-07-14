@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/white">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -69,54 +70,81 @@
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="324dp"
-        android:layout_height="149dp"
+        android:layout_width="158dp"
+        android:layout_height="105dp"
         android:layout_marginLeft="7dp"
-        android:layout_marginTop="13dp"
+        android:layout_marginTop="36dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.893"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8"
-        app:srcCompat="@drawable/icono_examen" />
+        app:srcCompat="@mipmap/icono_examen_puls" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="17dp"
-        android:layout_marginTop="39dp"
+        android:layout_marginTop="112dp"
         android:text="Practica"
         android:textColor="@color/verde_oscuro"
         android:textSize="28dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintHorizontal_bias="0.052"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="324dp"
-        android:layout_height="149dp"
+        android:layout_width="163dp"
+        android:layout_height="104dp"
         android:layout_marginTop="13dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintHorizontal_bias="0.895"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9"
-        app:layout_constraintVertical_bias="0.099"
+        app:layout_constraintVertical_bias="0.132"
         app:srcCompat="@drawable/icono_practi" />
 
     <Button
         android:id="@+id/btnCloseSession"
-        android:onClick="sessionClose"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="sessionClose"
         android:text="Cerrar Session"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.521"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView6"
-        app:layout_constraintVertical_bias="0.59" />
+        app:layout_constraintVertical_bias="0.822" />
+
+    <Button
+        android:id="@+id/btn_rendir_examne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rendir Examen"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.421" />
+
+    <Button
+        android:id="@+id/btn_rendir_practica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rendir Practica"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.84" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

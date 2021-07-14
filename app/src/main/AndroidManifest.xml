@@ -9,14 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-        <activity android:name=".Olvidar_Contrasena_Activity"></activity>
-        <activity android:name=".Pruebas_Firebase"></activity>
+        <activity android:name=".Prueba_Simulacion"></activity>
+        <activity android:name=".Examen_Simulacion" />
+        <activity android:name=".Olvidar_Contrasena_Activity" />
+        <activity android:name=".Pruebas_Firebase" />
         <activity android:name=".MainActivity" />
         <activity android:name=".frame_11" />
         <activity android:name=".frame_5" />
-        <activity android:name=".crear_cuenta">
-
-        </activity>
+        <activity android:name=".crear_cuenta" />
         <activity android:name=".frame_10" />
         <activity android:name=".ResultadosSimulacion" />
         <activity android:name=".confirmar_practica" />

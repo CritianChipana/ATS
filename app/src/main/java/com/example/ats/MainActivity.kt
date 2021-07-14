@@ -53,7 +53,13 @@ class MainActivity : AppCompatActivity() {
         }
 
         // TODO LO DE ARRIBA FUE PARA PROBAR SIIIIII
+        binding.btnRendirExamne.setOnClickListener(){
+            startActivity( Intent( this, Examen_Simulacion::class.java  ))
+        }
+        binding.btnRendirPractica.setOnClickListener(){
+            startActivity( Intent( this, Prueba_Simulacion::class.java  ))
 
+        }
 
     }
 
