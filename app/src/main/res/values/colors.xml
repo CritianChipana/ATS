@@ -10,4 +10,9 @@
     <color name="cabezal">#1E88E5</color>
     <color name="crema">#F4FEBA</color>
     <color name="verde_oscuro">#004242</color>
+    <color name="Azul_marino">#374F8D</color>
+    <color name="Plomo">#DEDEDE</color>
+    <color name="negro">#222222</color>
+    <color name="celeste_google">#4285F4</color>
+    <color name="gris_oscuro">#545454</color>
 </resources>

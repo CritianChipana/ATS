@@ -5,7 +5,7 @@
     android:id="@+id/txtCorreo"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F4FEBA"
+    android:background="@color/white"
     android:orientation="vertical"
     tools:context=".crear_cuenta">
 
@@ -14,7 +14,7 @@
             android:layout_height="100dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
-            android:src="@drawable/logo" />
+            android:src="@drawable/logo_azul" />
 
         <ProgressBar
             android:id="@+id/progressBar_registro"
@@ -31,7 +31,7 @@
             android:layout_marginTop="15dp"
             android:text="@string/titulo_registro"
             android:textAlignment="center"
-            android:textColor="#004242"
+            android:textColor="@color/Azul_marino"
             android:textSize="20dp"
             android:textStyle="bold" />
 
@@ -41,7 +41,7 @@
             android:layout_marginHorizontal="60dp"
             android:layout_marginTop="25dp"
             android:text="@string/Nombres"
-            android:textColor="#004242" />
+            android:textColor="@color/Azul_marino" />
 
         <EditText
             android:id="@+id/txtNombre"
@@ -60,7 +60,7 @@
             android:layout_marginHorizontal="60dp"
             android:layout_marginTop="20dp"
             android:text="@string/Apellidos"
-            android:textColor="#004242"
+            android:textColor="@color/Azul_marino"
             />
 
         <EditText
@@ -80,7 +80,7 @@
             android:layout_marginHorizontal="60dp"
             android:layout_marginTop="20dp"
             android:text="@string/Email"
-            android:textColor="#004242" />
+            android:textColor="@color/Azul_marino" />
 
         <EditText
             android:id="@+id/txtEmail"
@@ -100,7 +100,7 @@
             android:layout_marginHorizontal="60dp"
             android:layout_marginTop="20dp"
             android:text="@string/Contrasena"
-            android:textColor="#004242" />
+            android:textColor="@color/Azul_marino" />
 
         <EditText
             android:id="@+id/txtContrasena1"
@@ -120,7 +120,7 @@
             android:layout_marginHorizontal="60dp"
             android:layout_marginTop="20dp"
             android:text="@string/Conf_contraseña"
-            android:textColor="#004242" />
+            android:textColor="@color/Azul_marino" />
 
         <EditText
             android:id="@+id/txtContrasena2"
@@ -139,16 +139,15 @@
             android:id="@+id/btnRegistrar"
             android:onClick="register"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
+            android:layout_height="wrap_content"
             android:layout_marginHorizontal="60dp"
-            android:layout_marginBottom="20dp"
             android:background="@drawable/border_radious"
-            android:backgroundTint="#004242"
-            android:paddingHorizontal="60dp"
+            android:backgroundTint="@color/Azul_marino"
             android:paddingVertical="15dp"
             android:text="@string/btn_registrate"
             android:textColor="@color/white"
-            android:textSize="15sp"
+            android:textSize="16dp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.521"
