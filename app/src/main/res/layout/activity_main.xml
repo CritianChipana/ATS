@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@color/white">
+    android:background="@color/white"
+    tools:context=".MainActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:background="@color/crema"
+        android:background="@color/Azul_marino"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,7 +23,7 @@
             android:layout_height="33dp"
             android:layout_marginLeft="340dp"
             android:layout_marginTop="12dp"
-            app:srcCompat="@drawable/logo" />
+            app:srcCompat="@drawable/logo_blanco" />
     </LinearLayout>
 
     <TextView
@@ -32,9 +32,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="ATS APP"
-        android:textStyle="bold"
+        android:textColor="@color/Azul_marino"
         android:textSize="36dp"
-        android:textColor="@color/verde_oscuro"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
@@ -43,108 +43,108 @@
         android:id="@+id/mainNombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="2dp"
         android:hint="Usuario"
         android:text=""
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.157"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.195" />
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="17dp"
-        android:layout_marginTop="39dp"
         android:text="Examen"
-        android:textSize="28dp"
+        android:textColor="@color/gris_oscuro"
+        android:textSize="24dp"
         android:textStyle="bold"
-        android:textColor="@color/verde_oscuro"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintHorizontal_bias="0.103"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        app:layout_constraintTop_toBottomOf="@+id/mainNombre" />
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="158dp"
-        android:layout_height="105dp"
-        android:layout_marginLeft="7dp"
-        android:layout_marginTop="36dp"
+        android:layout_width="322dp"
+        android:layout_height="168dp"
+        android:layout_marginHorizontal="25dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.893"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8"
-        app:srcCompat="@mipmap/icono_examen_puls" />
+        app:srcCompat="@drawable/examen" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="17dp"
-        android:layout_marginTop="112dp"
+        android:layout_marginTop="8dp"
         android:text="Practica"
-        android:textColor="@color/verde_oscuro"
-        android:textSize="28dp"
+        android:textColor="@color/gris_oscuro"
+        android:textSize="24dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintHorizontal_bias="0.114"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="163dp"
-        android:layout_height="104dp"
-        android:layout_marginTop="13dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.895"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9"
-        app:layout_constraintVertical_bias="0.132"
-        app:srcCompat="@drawable/icono_practi" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_rendir_examne" />
 
     <Button
         android:id="@+id/btnCloseSession"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="129dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="10dp"
+        android:background=""
         android:onClick="sessionClose"
         android:text="Cerrar Session"
+        android:textColor="@color/Azul_marino"
+        android:textSize="10dp"
+        android:textAlignment="textEnd"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintHorizontal_bias="0.843"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6"
-        app:layout_constraintVertical_bias="0.822" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_rendir_practica"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btn_rendir_examne"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="45dp"
+        android:background="@drawable/border_radious"
+        android:backgroundTint="@color/white"
         android:text="Rendir Examen"
-
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/Azul_marino"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.139"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.421" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
     <Button
         android:id="@+id/btn_rendir_practica"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="45dp"
+        android:background="@color/white"
         android:text="Rendir Practica"
-
+        android:textColor="@color/Azul_marino"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.139"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.84" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="0.0" />
 
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="322dp"
+        android:layout_height="168dp"
+        android:layout_marginHorizontal="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:srcCompat="@drawable/practica" />
 </androidx.constraintlayout.widget.ConstraintLayout>
