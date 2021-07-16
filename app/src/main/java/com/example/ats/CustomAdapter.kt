@@ -56,7 +56,7 @@ class CustomAdapter( /*private val itemClickListener: AdapterView.OnItemClickLis
                     putString("key_curso",post)
                 }
 
-                val intent = Intent( itemView.context, confirmar_practica::class.java ).apply {
+                val intent = Intent( itemView.context, frame_11::class.java ).apply {
                     putExtras( bundle )
                 }
                 itemView.context.startActivity( intent )

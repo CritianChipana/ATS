@@ -108,7 +108,7 @@
             />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/txtCurso_Prueba"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
@@ -126,7 +126,7 @@
             />
 
         <Button
-            android:id="@+id/btnRegistrar"
+            android:id="@+id/btnSiguiente"
             android:layout_width="match_parent"
             android:layout_marginHorizontal="20dp"
             android:layout_height="wrap_content"

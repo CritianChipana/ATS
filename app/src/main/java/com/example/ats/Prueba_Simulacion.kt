@@ -22,6 +22,5 @@ class Prueba_Simulacion : AppCompatActivity() {
         recyclerView.layoutManager = LinearLayoutManager( this )
         recyclerView.adapter = adapter
 
-
     }
 }
