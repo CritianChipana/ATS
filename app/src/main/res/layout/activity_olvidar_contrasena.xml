@@ -22,7 +22,7 @@
             android:layout_height="33dp"
             android:layout_marginLeft="340dp"
             android:layout_marginTop="12dp"
-            app:srcCompat="@drawable/logo_blanco" />
+            android:src="@drawable/logo_blanco" />
     </LinearLayout>
 
     <TextView
