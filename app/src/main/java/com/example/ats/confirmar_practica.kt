@@ -33,7 +33,7 @@ class confirmar_practica : AppCompatActivity() {
             startActivity( intent )
         }
 
-        binding.cplistoBtn.setOnClickListener(){
+     /*   binding.cplistoBtn.setOnClickListener(){
            // var idq = bundbleReception!!.getString("key_curso")
             val bundle2 = Bundle()
             var nombre = "CRISTIAN"
@@ -41,7 +41,7 @@ class confirmar_practica : AppCompatActivity() {
             bundle2.putString( "key_nombre",nombre )
             var intent2 = Intent( this, frame_11::class.java )
             startActivity( intent2 )
-        }
+        }*/
 
 
     }
