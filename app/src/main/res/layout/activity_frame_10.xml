@@ -15,45 +15,13 @@
         android:layout_height="60dp"
         android:orientation="horizontal"
         >
-        <LinearLayout
-            android:layout_width="60dp"
-            android:layout_height="match_parent"
-            android:background="#222222"
-            android:orientation="vertical"
-        >
-            <View
-                android:layout_width="40dp"
-                android:layout_height="4dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="15dp"
-                android:background="#7A7A7A"
 
-                />
-
-            <View
-                android:layout_width="40dp"
-                android:layout_height="4dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp"
-                android:background="#7A7A7A"
-
-                />
-
-            <View
-                android:layout_width="40dp"
-                android:layout_height="4dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp"
-                android:background="#7A7A7A"
-
-                />
-        </LinearLayout>
 
         <LinearLayout
             android:layout_width="60dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
-            android:background="#004242"
+            android:background="@color/Azul_marino"
             >
             <TextView
                 android:layout_width="match_parent"
@@ -71,7 +39,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="#F4FEBA"
+        android:background="@color/white"
         >
         <TextView
             android:id="@+id/textView"
@@ -114,20 +82,22 @@
             android:id="@+id/txtNota"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="70dp"
+            android:layout_marginTop="40dp"
             android:gravity="center"
             android:text="6"
+            android:textStyle="bold"
             android:textColor="@color/black"
-            android:textSize="30sp" />
+            android:textSize="50dp" />
 
         <Button
             android:id="@+id/btn_salir"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="30dp"
             android:layout_marginBottom="20dp"
             android:background="@drawable/border_radious"
-            android:backgroundTint="#004242"
+            android:backgroundTint="@color/Azul_marino"
             android:paddingHorizontal="60dp"
             android:paddingVertical="15dp"
             android:text="@string/btn_salir"
@@ -145,7 +115,7 @@
             android:layout_width="match_parent"
             android:layout_marginHorizontal="20dp"
             android:layout_height="wrap_content"
-            android:backgroundTint="#004242"
+            android:backgroundTint="@color/Azul_marino"
             android:paddingHorizontal="60dp"
             android:paddingVertical="15dp"
             android:text="@string/btn_volver_intentar"

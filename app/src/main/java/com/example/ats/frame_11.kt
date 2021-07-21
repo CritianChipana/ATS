@@ -70,13 +70,21 @@ class frame_11 : AppCompatActivity() {
                 pregunta3enunciado,
                 pregunta4enunciado
             )
+            println("lllllllllllllllllllllllllllll lista de preguntas")
+            for( i in listaPreguntas )
+            {
+               println(i)
+            }
+            println( listaPreguntas[0] )
 
-            listaRespuestas = mutableListOf(
+            listaRespuestas = mutableListOf<String>(
                 pregunta1solucion,
                 pregunta2solucion,
                 pregunta3solucion,
                 pregunta4solucion
             )
+            println("lllllllllllllllllllllllllllll lista de respuestas")
+            println( listaRespuestas )
 
             binding.txtPregunta.setText( pregunta1enunciado)
             ListarAlternativas( "problema 1" )
@@ -84,15 +92,15 @@ class frame_11 : AppCompatActivity() {
             println( listaAlternativas )
 
             if( binding.radioButton1.isChecked ){
-                respuestas[contRespuesta]="A"
+                respuestas.add("A")
             } else if ( binding.radioButton2.isChecked ) {
-                respuestas[contRespuesta]="B"
+                respuestas.add("B")
             } else if ( binding.radioButton3.isChecked ) {
-                respuestas[contRespuesta]="C"
+                respuestas.add("C")
             } else if ( binding.radioButton4.isChecked ) {
-                respuestas[contRespuesta]="D"
+                respuestas.add("D")
             } else if ( binding.radioButton5.isChecked ) {
-                respuestas[contRespuesta]="E"
+                respuestas.add("E")
             }
 
             println("111111111111111111111111111111111111111111111111111111111112")
@@ -113,9 +121,10 @@ class frame_11 : AppCompatActivity() {
         binding.btnSiguiente.setOnClickListener(){
 
             if ( cont < 4 ){
+
                 binding.txtPregunta.setText(listaPreguntas[cont])
                 cont = cont +1
-                contRespuesta ++
+
                 if( binding.radioButton1.isChecked ){
                     respuestas.add("A")
                 } else if ( binding.radioButton2.isChecked ) {
@@ -129,23 +138,31 @@ class frame_11 : AppCompatActivity() {
                 }else{
                     respuestas.add("F")
                 }
+                contRespuesta ++
+                println( "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy" )
+                println( contRespuesta )
 
-                if(  cont==9 ){
 
-                }
 
 
             } else {
-                for( (i, value) in listaAlternativas.withIndex() ){
-                    for ( ( i, value2 ) in respuestas.withIndex() ){
+                for( (i, value) in listaRespuestas.withIndex() ){
+
+                    println("-->>>>>>>>>>>>>>>  $value")
+                    for ( ( ii, value2 ) in respuestas.withIndex() ){
+                        println("*********************  $value2")
                         if( value ==  value2 ){
                             respuestascorrectas ++
+
                         }
                     }
-
+                    respuestascorrectas = 6
                 }
                 var bundleAnwer = Bundle()
                 var anynote = respuestascorrectas.toString()
+                println("vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv")
+                println(anynote)
+                println(respuestascorrectas)
                 bundleAnwer.putString(  "key_nota",anynote )
                 var intentNota = Intent (  this , frame_10::class.java)
                 startActivity( intentNota.putExtras( bundleAnwer ) )

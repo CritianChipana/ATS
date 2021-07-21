@@ -85,15 +85,15 @@ class PreguntaSimulacro : AppCompatActivity() {
             println( listaAlternativas )
 
             if( binding.radioButtonE1.isChecked ){
-                respuestas[contRespuesta]="A"
+                respuestas.add("A")
             } else if ( binding.radioButtonE2.isChecked ) {
-                respuestas[contRespuesta]="B"
+                respuestas.add("B")
             } else if ( binding.radioButtonE3.isChecked ) {
-                respuestas[contRespuesta]="C"
+                respuestas.add("C")
             } else if ( binding.radioButtonE4.isChecked ) {
-                respuestas[contRespuesta]="D"
+                respuestas.add("D")
             } else if ( binding.radioButtonE5.isChecked ) {
-                respuestas[contRespuesta]="E"
+                respuestas.add("E")
             }
 
             println("111111111111111111111111111111111111111111111111111111111112")
@@ -131,9 +131,6 @@ class PreguntaSimulacro : AppCompatActivity() {
                     respuestas.add("F")
                 }
 
-                if(  cont==9 ){
-
-                }
 
 
             } else {
