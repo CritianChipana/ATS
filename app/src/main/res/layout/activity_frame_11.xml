@@ -73,7 +73,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/cpatras_btn"
+        android:id="@+id/cpatrasBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#004242"
@@ -141,7 +141,7 @@
         android:layout_marginTop="23dp"
         android:gravity="center"
         android:paddingHorizontal="20dp"
-        android:text="@string/Pregunta_practica2"
+        android:text="pregunta1"
         android:textColor="@color/black"
         android:textSize="20sp"
 
@@ -154,7 +154,7 @@
 
 
     <RadioGroup
-        android:id="@+id/radioGroup"
+        android:id="@+id/radioGroupprueba"
         android:layout_width="251dp"
         android:layout_height="181dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -164,39 +164,53 @@
         app:layout_constraintTop_toBottomOf="@+id/txtPregunta"
         app:layout_constraintVertical_bias="0.287">
 
-
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/radioButton0"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="20"
-
+            android:text=""
+            android:textColor="@color/black"
+            android:visibility="invisible"
             />
         <RadioButton
             android:id="@+id/radioButton1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="25"
-
+            android:text=""
+            android:textColor="@color/black"
             />
-
         <RadioButton
             android:id="@+id/radioButton2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="22" />
+            android:text=""
+            android:textColor="@color/black"
+
+            />
 
         <RadioButton
             android:id="@+id/radioButton3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Mosca" />
+            android:text=""
+            android:textColor="@color/black"
+            />
 
         <RadioButton
             android:id="@+id/radioButton4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="23" />
+            android:text=""
+            android:textColor="@color/black"
+            />
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            />
 
 
     </RadioGroup>

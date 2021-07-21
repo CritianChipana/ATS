@@ -63,7 +63,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/cpatras_btn"
+        android:id="@+id/cpatrasBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#004242"
