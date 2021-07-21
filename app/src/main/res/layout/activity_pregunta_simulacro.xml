@@ -63,24 +63,6 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/cpatrasBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#004242"
-        android:paddingHorizontal="40dp"
-        android:paddingVertical="10dp"
-
-        android:text="@string/btn_atras"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.119"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
-        app:layout_constraintVertical_bias="0.641" />
-
-    <Button
         android:id="@+id/btnSiguiente"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -94,7 +76,7 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintHorizontal_bias="0.82"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup"
         app:layout_constraintVertical_bias="0.0" />
@@ -139,12 +121,10 @@
         app:layout_constraintGuide_percent="0.5" />
 
 
-
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/materia_simulacro"
         android:textColor="@color/black"
         android:textSize="16sp"
 
@@ -156,35 +136,44 @@
         app:layout_constraintVertical_bias="0.067" />
 
     <TextView
-        android:id="@+id/txtPregunta"
+        android:id="@+id/txtPreguntaSimulacion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="23dp"
-        android:text="@string/Pregunta_simulacion"
-        android:textSize="20sp"
-        android:textColor="@color/black"
         android:gravity="center"
         android:paddingHorizontal="20dp"
+        android:text="@string/Pregunta_simulacion"
+        android:textColor="@color/black"
+        android:textSize="20sp"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.385"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.048" />
+        app:layout_constraintVertical_bias="0.047" />
+
 
     <RadioGroup
-        android:id="@+id/radioGroup"
+        android:id="@+id/radioGroupExamen"
         android:layout_width="251dp"
         android:layout_height="181dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.575"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtPregunta">
-
+        app:layout_constraintTop_toBottomOf="@+id/txtPreguntaSimulacion"
+        app:layout_constraintVertical_bias="0.592">
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/radioButtonE0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="10 de Diciembre de 1948"
+            android:visibility="invisible"
+            />
+        <RadioButton
+            android:id="@+id/radioButtonE1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="10 de Diciembre de 1948"
@@ -192,31 +181,29 @@
             />
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/radioButtonE2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="9 de Diciembre de 1948" />
 
         <RadioButton
-            android:id="@+id/radioButton3"
+            android:id="@+id/radioButtonE3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="23 de Septiembre 1756" />
 
         <RadioButton
-            android:id="@+id/radioButton4"
+            android:id="@+id/radioButtonE4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="2 de Enero de 1950" />
 
         <RadioButton
-            android:id="@+id/radioButton5"
+            android:id="@+id/radioButtonE5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="N/A" />
     </RadioGroup>
-
-
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3"

@@ -21,6 +21,7 @@ class frame_11 : AppCompatActivity() {
     private var respuestas = mutableListOf<String>()
     var cont = 1
     var contRespuesta = 0
+    var respuestascorrectas = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         binding = ActivityFrame11Binding.inflate( layoutInflater )
@@ -40,9 +41,12 @@ class frame_11 : AppCompatActivity() {
         }
 
         materia = when(identiicador){
-            "0" -> "Aritmetica"
-            "1" -> "Geometria"
-            "2" -> "Trigonometria"
+            "0" -> "ARITMETICA"
+            "1" -> "BIOLOGIA"
+            "2" -> "GEOGRAFIA"
+            "3" -> "LENGUAJE"
+            "4" -> "LITERATURA"
+            "5" -> "TRIGONOMETRIA"
             else ->"No hay datos"
         }
 
@@ -111,26 +115,46 @@ class frame_11 : AppCompatActivity() {
             if ( cont < 4 ){
                 binding.txtPregunta.setText(listaPreguntas[cont])
                 cont = cont +1
+                contRespuesta ++
+                if( binding.radioButton1.isChecked ){
+                    respuestas.add("A")
+                } else if ( binding.radioButton2.isChecked ) {
+                    respuestas.add("B")
+                } else if ( binding.radioButton3.isChecked ) {
+                    respuestas.add("C")
+                } else if ( binding.radioButton4.isChecked ) {
+                    respuestas.add("D")
+                } else if ( binding.radioButton5.isChecked ) {
+                    respuestas.add("E")
+                }else{
+                    respuestas.add("F")
+                }
+
+                if(  cont==9 ){
+
+                }
+
+
             } else {
-                startActivity( Intent( this, frame_10::class.java ) )
+                for( (i, value) in listaAlternativas.withIndex() ){
+                    for ( ( i, value2 ) in respuestas.withIndex() ){
+                        if( value ==  value2 ){
+                            respuestascorrectas ++
+                        }
+                    }
+
+                }
+                var bundleAnwer = Bundle()
+                var anynote = respuestascorrectas.toString()
+                bundleAnwer.putString(  "key_nota",anynote )
+                var intentNota = Intent (  this , frame_10::class.java)
+                startActivity( intentNota.putExtras( bundleAnwer ) )
             }
             println("4444444444444444")
             println(cont)
             ListarAlternativas( "problema ${cont}" )
              var nose =binding.radioGroupprueba.getChildAt(0)
              binding.radioGroupprueba.check( nose.getId() )
-
-            if( binding.radioButton1.isChecked ){
-                
-            } else if ( binding.radioButton2.isChecked ) {
-
-            } else if ( binding.radioButton2.isChecked ) {
-
-            } else if ( binding.radioButton2.isChecked ) {
-
-            } else if ( binding.radioButton2.isChecked ) {
-
-            }
 
         }
 

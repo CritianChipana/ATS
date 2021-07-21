@@ -1,5 +1,7 @@
 package com.example.ats
 
+import android.content.Intent
+import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,28 +12,20 @@ import androidx.recyclerview.widget.RecyclerView
 class CustomAdapterExamen : RecyclerView.Adapter<CustomAdapterExamen.ViewHolder>(){
 
     val universidad = arrayOf(
-        "GEOMETRIA",
-        "ARITMETICA",
-        "TRIGONOMETRIA",
-        /*       "ALGEBRA",
-             "BIOLOGIA",
-              "QUMICA",
-              "FISICA",
-              "LENGUAJE",
-              "LITERATURA",
-              "FILOSOFIA",
-              "LOGICA",
-              "ECONOMIA",
-              "CIVICA",
-              "PSICOLOGIA",
-              "GEOGRAFIA",
-              "NOSE MANITO"*/
+        "UNMSM",
+        "UNTELS",
+        "UNI",
+        "UNALM",
+        "UNFV",
+
     )
 
     val imagenes_u = intArrayOf(
-        R.drawable.icon_google,
-        R.drawable.ico_paypal,
-        R.drawable.icono_practi )
+        R.drawable.sanmarcos,
+        R.drawable.untels,
+        R.drawable.uni,
+        R.drawable.agraria,
+        R.drawable.villareal )
 
 
     inner class ViewHolder( itemView: View ):RecyclerView.ViewHolder( itemView ){
@@ -41,7 +35,21 @@ class CustomAdapterExamen : RecyclerView.Adapter<CustomAdapterExamen.ViewHolder>
 
 
         init {
+            itemTitulo.setOnClickListener(){
+                    v: View ->
+                val position: Int = adapterPosition
+                val positionActualizado = absoluteAdapterPosition
+                var bundle = Bundle().apply {
+                    val post = positionActualizado.toString()
+                    putString("key_uni",post)
+                }
 
+                val intent = Intent( itemView.context, PreguntaSimulacro::class.java ).apply {
+                    putExtras( bundle )
+                }
+                itemView.context.startActivity( intent )
+                //Toast.makeText(itemView.context, "Precionaste # ${position +1} mientras que ${positionActualizado +1}",Toast.LENGTH_SHORT).show()
+            }
         }
 
 

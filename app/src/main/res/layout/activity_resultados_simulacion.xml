@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ResultadosSimulacion"
-    android:background="#F4FEBA">
+    android:background="@color/white">
 
 
     <LinearLayout
@@ -13,8 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_weight="1"
-        android:background="#004242"
-
+        android:background="@color/Azul_marino"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,99 +22,39 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
 
-        <LinearLayout
-            android:layout_width="50dp"
-            android:layout_height="match_parent"
-            android:background="#222222"
-            android:orientation="vertical">
-
-            <View
-                android:layout_width="30dp"
-                android:layout_height="4dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="15dp"
-                android:background="#7A7A7A"
-
-                />
-
-            <View
-                android:layout_width="30dp"
-                android:layout_height="4dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp"
-                android:background="#7A7A7A"
-
-                />
-
-            <View
-                android:layout_width="30dp"
-                android:layout_height="4dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp"
-                android:background="#7A7A7A"
-
-                />
-
-
-        </LinearLayout>
-
-
     </LinearLayout>
 
     <Button
-        android:id="@+id/btnSiguiente"
+        android:id="@+id/btnVolverIntentarExamen"
         android:layout_width="match_parent"
         android:layout_marginHorizontal="20dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="#004242"
-        android:paddingHorizontal="60dp"
-        android:paddingVertical="15dp"
-        android:text="@string/btn_ver_errores"
-        android:textColor="@color/white"
-        android:textSize="25sp"
-        android:background="@drawable/border_radious"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.521"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_volver_intentar"
-        app:layout_constraintVertical_bias="0.229" />
-
-    <Button
-        android:id="@+id/btn_volver_intentar"
-        android:layout_width="match_parent"
-        android:layout_marginHorizontal="20dp"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#004242"
+        android:backgroundTint="@color/Azul_marino"
         android:paddingHorizontal="60dp"
         android:paddingVertical="15dp"
         android:text="@string/btn_volver_intentar"
         android:textColor="@color/white"
         android:textSize="25sp"
         android:background="@drawable/border_radious"
-
-
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cpatrasBtn"
+        app:layout_constraintTop_toBottomOf="@+id/btnsalirExamen"
         app:layout_constraintVertical_bias="0.116" />
 
     <Button
-        android:id="@+id/cpatrasBtn"
+        android:id="@+id/btnsalirExamen"
         android:layout_width="match_parent"
         android:layout_marginHorizontal="20dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="#004242"
+        android:backgroundTint="@color/Azul_marino"
         android:paddingHorizontal="60dp"
         android:paddingVertical="15dp"
         android:text="@string/btn_salir"
         android:textColor="@color/white"
         android:textSize="25sp"
         android:background="@drawable/border_radious"
-
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -161,21 +100,6 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.5" />
-
-    <TextView
-        android:id="@+id/txtCurso_Prueba"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="@string/cantidad_errores_simulacion"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.046" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -15,6 +15,21 @@ class frame_10 : AppCompatActivity() {
         setContentView(binding.root)
 
 
+        var bundlerespuestasJhonny =  intent.extras
+
+        if(bundlerespuestasJhonny != null){
+
+            var notita = bundlerespuestasJhonny.getString("key_nota")
+            println("888888888 $notita")
+            binding.txtNota.setText(notita)
+
+        }else{
+            println("11111111111111111111111111111111111111111111111111111112")
+            println("11111111111111111111111111111111111111111111111111111113")
+            println("11111111111111111111111111111111111111111111111111111114")
+        }
+
+
         binding.btnSalir.setOnClickListener(){
             startActivity( Intent( this, MainActivity::class.java ) )
         }

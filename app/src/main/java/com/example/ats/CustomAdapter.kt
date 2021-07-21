@@ -15,22 +15,12 @@ class CustomAdapter( /*private val itemClickListener: AdapterView.OnItemClickLis
                     ) : RecyclerView.Adapter< CustomAdapter.ViewHolder>(){
 
     val cursos = arrayOf(
-                        "GEOMETRIA",
                         "ARITMETICA",
-                        "TRIGONOMETRIA",
-                        "ALGEBRA",
                         "BIOLOGIA",
-                        "QUMICA",
-                        "FISICA",
+                        "GEOGRAFIA",
                         "LENGUAJE",
                         "LITERATURA",
-                        "FILOSOFIA",
-                        "LOGICA",
-                        "ECONOMIA",
-                        "CIVICA",
-                        "PSICOLOGIA",
-                        "GEOGRAFIA",
-                        "NOSE MANITO"
+                        "TRIGONOMETRIA"
                         )
 
     val imagenes = intArrayOf(
