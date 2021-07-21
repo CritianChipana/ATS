@@ -12,7 +12,6 @@ import com.google.firebase.database.ktx.getValue
 class frame_11 : AppCompatActivity() {
 
     private lateinit var dbReference : DatabaseReference
-
     private lateinit var binding : ActivityFrame11Binding
     private lateinit var identiicador : String
     private lateinit var materia : String
@@ -23,14 +22,12 @@ class frame_11 : AppCompatActivity() {
     var cont = 1
     var contRespuesta = 0
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         binding = ActivityFrame11Binding.inflate( layoutInflater )
         super.onCreate(savedInstanceState)
         setContentView( binding.root )
         dbReference = FirebaseDatabase.getInstance().getReference()
         val bundleReception2 = intent.extras
-
 
         if(  bundleReception2 != null ){
             identiicador = bundleReception2!!.getString( "key_curso" ).toString()
@@ -94,12 +91,10 @@ class frame_11 : AppCompatActivity() {
                 respuestas[contRespuesta]="E"
             }
 
-
             println("111111111111111111111111111111111111111111111111111111111112")
             println("111111111111111111111111111111111111111111111111111111111113")
             println("111111111111111111111111111111111111111111111111111111111114")
             println("111111111111111111111111111111111111111111111111111111111115")
-
 
         }.addOnFailureListener {
 
@@ -107,9 +102,7 @@ class frame_11 : AppCompatActivity() {
             Log.e("firebase", "Error getting data", it)
             println("**************************************************")
 
-
         }
-
 
         // funciones click para el desplazo de las preguntas
 
@@ -158,7 +151,6 @@ class frame_11 : AppCompatActivity() {
         }*/
 
     }
-
 
     // funcion para listar las alternativas de las preguntas
     fun ListarAlternativas(numeropregunta:String): MutableList<String> {
